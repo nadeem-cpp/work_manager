@@ -53,20 +53,18 @@ def main():
             double_clicked = True
             trip += 1
             if trip % 8 == 0:
-                messagebox.showinfo(title="Take Break!", message=f"Congrats! You have completed 100 minutes\nPlease "
+                messagebox.showinfo(title="Take Break!", message=f"Congrats! You have worked 100 minutes\nPlease "
                                                                  f"take a break of {LONG_BREAK_MIN} minutes")
                 title.config(text="Break", fg=RED)
                 time_counter(LONG_BREAK_MIN * 60)
             elif trip % 2 == 0:
-                messagebox.showinfo(title="Take Break!", message=f"Congrats! You have completed 20 minutes of work"
-                                                                 f"\nPlease take a break of {SHORT_BREAK_MIN} minutes")
+                messagebox.showinfo(title="Take Break!", message=f"\nPlease take a break of {SHORT_BREAK_MIN} minutes")
                 title.config(text="Break", fg=PINK)
                 time_counter(SHORT_BREAK_MIN * 60)
             else:
                 # after 1st work
                 if trip != 1:
-                    messagebox.showinfo(title="Back to Work!", message=f"Hope you enjoyed your break\nProceed "
-                                                                       f"with work")
+                    messagebox.showinfo(title="Back to Work!", message=f"Back To Work!")
                     title.config(text="Work", fg=GREEN)
                 time_counter(WORK_MIN * 60)
 
