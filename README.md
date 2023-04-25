@@ -3,5 +3,5 @@ timer to work for 25 minutes and take a short break of 5 minutes break
 and after 100 minutes of work take a long break of 20 mintues.
 The tool is build in python.<br>
 Libraries used:<br>
-tkinker
-datetime
+<b>tkinker<br>
+datetime</b>
